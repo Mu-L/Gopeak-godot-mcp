@@ -31,6 +31,12 @@ It is designed for trusted Godot 4 workflows: small default tool surface, setup-
 ### 1) Install GoPeak
 
 ```bash
+bun add -g https://github.com/HaD0Yun/Doyunha-Gopeak/releases/download/v2.3.9/gopeak-2.3.9.tgz
+```
+
+That is the quickest installation path. It installs the bundled runtime directly from GitHub Releases without npm. For a checksum-verified installation, use:
+
+```bash
 curl -fLO https://github.com/HaD0Yun/Doyunha-Gopeak/releases/download/v2.3.9/gopeak-2.3.9.tgz
 curl -fLO https://github.com/HaD0Yun/Doyunha-Gopeak/releases/download/v2.3.9/gopeak-2.3.9.tgz.sha256
 if command -v sha256sum >/dev/null 2>&1; then
@@ -41,7 +47,7 @@ fi
 bun add -g "$PWD/gopeak-2.3.9.tgz"
 ```
 
-This verifies the downloaded release before Bun installs it globally. The absolute tarball path avoids a relative-path bug in Bun 1.3.3. The checksum command works on Linux (`sha256sum`) and macOS (`shasum`). To use the supported installer instead, download or clone the repository and run it locally—do not pipe a remote script into a shell:
+The verified path checks the downloaded release before Bun installs it globally. The absolute tarball path avoids a relative-path bug in Bun 1.3.3. The checksum command works on Linux (`sha256sum`) and macOS (`shasum`). To use the supported installer instead, download or clone the repository and run it locally—do not pipe a remote script into a shell:
 
 ```bash
 git clone https://github.com/HaD0Yun/Doyunha-Gopeak.git

@@ -15,6 +15,13 @@
 
 ### Executar
 ```bash
+bun add -g https://github.com/HaD0Yun/Doyunha-Gopeak/releases/download/v2.3.9/gopeak-2.3.9.tgz
+gopeak
+```
+
+Este é o caminho de instalação mais simples. O bundle é instalado diretamente do GitHub Release, sem registro de pacotes. Para verificar também o checksum, use:
+
+```bash
 curl -fLO https://github.com/HaD0Yun/Doyunha-Gopeak/releases/download/v2.3.9/gopeak-2.3.9.tgz
 curl -fLO https://github.com/HaD0Yun/Doyunha-Gopeak/releases/download/v2.3.9/gopeak-2.3.9.tgz.sha256
 if command -v sha256sum >/dev/null 2>&1; then sha256sum -c gopeak-2.3.9.tgz.sha256; else shasum -a 256 -c gopeak-2.3.9.tgz.sha256; fi
